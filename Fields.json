@@ -1,0 +1,96 @@
+{
+  "Header": {
+    "type": "textfield",
+    "label": "Header Text",
+    "value": "Header Text"
+  },
+  "mainText": {
+    "type": "textfield",
+    "label": "Main Text",
+    "value": "{{name}} just subscribed!"
+  },
+  "subText": {
+    "type": "textfield",
+    "label": "Secondary Text",
+    "value": "THIS IS PROBABLY SOME REALLY LAME OVERDONE MEME HURHURHUR"
+  },
+  "headerFont": {
+      "type": "googleFont",
+      "label": "Header Font",
+      "value": "Baloo Paaji"
+    },
+  "headerFontSize": {
+    "type": "slider",
+    "label": "headerFontSize",
+    "value": 24,
+    "min": 10,
+    "max": 72,
+    "steps": 2
+  },
+  "headerFontColor": {
+    "type": "colorpicker",
+    "label": "Header Text Color",
+    "value": "#FFFFFF"
+  },
+  "mainFont": {
+      "type": "googleFont",
+      "label": "Main Text Font",
+      "value": "Ubuntu"
+    },  
+  "mainFontSize": {
+    "type": "slider",
+    "label": "headerFontSize",
+    "value": 20,
+    "min": 10,
+    "max": 72,
+    "steps": 2
+  },
+  "mainFontColor": {
+    "type": "colorpicker",
+    "label": "Main Text Color",
+    "value": "#666666"
+  },
+  "subFont": {
+      "type": "googleFont",
+      "label": "Secondary Font",
+      "value": "Baloo Paaji"
+    },
+  "subFontSize": {
+    "type": "slider",
+    "label": "headerFontSize",
+    "value": 16,
+    "min": 10,
+    "max": 72,
+    "steps": 2
+  },
+  "subFontColor": {
+    "type": "colorpicker",
+    "label": "Sub Text Color",
+    "value": "#666666"
+  },
+  "imageSize": {
+    "type": "slider",
+    "label": "Image Size (x50 px)",
+    "value": 5,
+    "min": 1,
+    "max": 10,
+    "steps": 10
+  },
+  "bubbleVAlign": {
+    "type": "slider",
+    "label": "Bubble Vertical Offset",
+    "value": 0,
+    "min": -3,
+    "max": 3,
+    "steps": 7
+  },
+  "debug": {
+    "type": "dropdown",
+    "label": "Debug",
+    "value": "",
+    "options": {
+      "": "Off",
+      "debug": "On"
+    }
+  }
+}
