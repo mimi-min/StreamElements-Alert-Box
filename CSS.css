@@ -18,7 +18,6 @@
 	position: absolute;
 	max-width: calc(100% - ({{imageSize}}px * 50) - 50px);
   	min-width: 200px;
-	padding:10px;
   	left: calc( ({{imageSize}}px * 50) + 10px);
   	top: calc( ( ({{imageSize}}px * 50) / 10) * {{bubbleVAlign}} + (({{imageSize}}px * 50)/2) );
   	transform: translatey(-50%);
@@ -36,11 +35,11 @@
   	width: 0px;
 	height: 0px;
 	position: absolute;
-	border-right: calc(10px + {{borderWeight}}px) solid {{borderColor}};
-	border-left: calc(10px + {{borderWeight}}px) solid transparent;
-	border-top: calc(10px + {{borderWeight}}px) solid {{borderColor}};
-	border-bottom: calc(10px + {{borderWeight}}px) solid transparent;
-	left: calc(-2*{{borderWeight}}px - 10px);
+    border-right: calc({{tailLength}}px + {{borderWeight}}px) solid {{borderColor}};
+	border-left: calc({{tailLength}}px + {{borderWeight}}px) solid transparent;
+	border-top: calc({{tailLength}}px + {{borderWeight}}px) solid {{borderColor}};
+	border-bottom: calc({{tailLength}}px + {{borderWeight}}px) solid transparent;
+	left: calc((-2*{{borderWeight}}px) - 2*{{tailLength}}px) ;
 	top: 20%;
 }
 
@@ -49,11 +48,11 @@
   width: 0px;
   height: 0px;
   position: absolute;
-	border-right: calc({{borderWeight}}px + 10px) solid {{bubbleColor}};
-  border-left: calc({{borderWeight}}px + 10px) solid transparent;
-  border-top: calc({{borderWeight}}px + 10px) solid {{bubbleColor}};
-  border-bottom: calc({{borderWeight}}px + 10px) solid transparent;
-  left: calc(-0.3 * {{borderWeight}}px - 10px);
+  border-right: calc({{borderWeight}}px + {{tailLength}}px) solid {{bubbleColor}};
+  border-left: calc({{borderWeight}}px + {{tailLength}}px) solid transparent;
+  border-top: calc({{borderWeight}}px + {{tailLength}}px) solid {{bubbleColor}};
+  border-bottom: calc({{borderWeight}}px + {{tailLength}}px) solid transparent;
+  left: calc(-1 *{{borderWeight}}px - 2* {{tailLength}}px);
   top: calc(20% + calc({{borderWeight}}px * 0.7));
 }
 
