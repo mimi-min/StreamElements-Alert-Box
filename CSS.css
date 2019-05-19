@@ -37,10 +37,10 @@
 	height: 0px;
 	position: absolute;
 	border-right: calc(10px + {{borderWeight}}px) solid {{borderColor}};
-	border-left: 10px solid transparent;
-	border-top: 10px solid {{borderColor}};
+	border-left: calc(10px + {{borderWeight}}px) solid transparent;
+	border-top: calc(10px + {{borderWeight}}px) solid {{borderColor}};
 	border-bottom: calc(10px + {{borderWeight}}px) solid transparent;
-	left: calc(-1*{{borderWeight}}px - 10px);
+	left: calc(-2*{{borderWeight}}px - 10px);
 	top: 20%;
 }
 
@@ -53,8 +53,8 @@
   border-left: calc({{borderWeight}}px + 10px) solid transparent;
   border-top: calc({{borderWeight}}px + 10px) solid {{bubbleColor}};
   border-bottom: calc({{borderWeight}}px + 10px) solid transparent;
-  left: -7px;
-  top: calc(20% + calc({{borderWeight}}px * 0.5));
+  left: calc(-0.3 * {{borderWeight}}px - 10px);
+  top: calc(20% + calc({{borderWeight}}px * 0.7));
 }
 
 #bubble-header {
