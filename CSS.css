@@ -14,8 +14,6 @@
     background-size: contain;
 }
 
-
-
 #bubble-container {
 	position: absolute;
 	max-width: calc(100% - ({{imageSize}}px * 50) - 50px);
@@ -27,8 +25,8 @@
 }
 
 #bubble {
-	background: white;
-	border: 5px solid silver;
+	background: {{bubbleColor}};
+	border: {{borderWeight}}px solid {{borderColor}};
 	border-radius: 15px;
 	padding: 15px;
 }
@@ -38,25 +36,25 @@
   	width: 0px;
 	height: 0px;
 	position: absolute;
-	border-right: 10px solid silver;
+	border-right: calc(10px + {{borderWeight}}px) solid {{borderColor}};
 	border-left: 10px solid transparent;
-	border-top: 10px solid silver;
-	border-bottom: 10px solid transparent;
-	left: calc(-10px + 2px);
+	border-top: 10px solid {{borderColor}};
+	border-bottom: calc(10px + {{borderWeight}}px) solid transparent;
+	left: calc(-1*{{borderWeight}}px - 10px);
 	top: 20%;
 }
 
-#bubble:after {
+#bubble:after { 
   content: "";
   width: 0px;
   height: 0px;
   position: absolute;
-  border-right: 7px solid #fff;
-  border-left: 7px solid transparent;
-  border-top: 7px solid #fff;
-  border-bottom: 7px solid transparent;
-  left: 2px;
-  top: calc(20% + 4px);
+	border-right: calc({{borderWeight}}px + 10px) solid {{bubbleColor}};
+  border-left: calc({{borderWeight}}px + 10px) solid transparent;
+  border-top: calc({{borderWeight}}px + 10px) solid {{bubbleColor}};
+  border-bottom: calc({{borderWeight}}px + 10px) solid transparent;
+  left: -7px;
+  top: calc(20% + calc({{borderWeight}}px * 0.5));
 }
 
 #bubble-header {
@@ -79,7 +77,7 @@
 }
 
 #bubble-icon {
-	background-image: url(https://i.pinimg.com/originals/a9/9e/41/a99e419272b53630b5d5b178188a8900.gif);
+  background-image: url({{iconURL}});
 	background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
