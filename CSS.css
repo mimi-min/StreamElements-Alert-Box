@@ -52,7 +52,7 @@
   border-left: calc({{borderWeight}}px + {{tailLength}}px) solid transparent;
   border-top: calc({{borderWeight}}px + {{tailLength}}px) solid {{bubbleColor}};
   border-bottom: calc({{borderWeight}}px + {{tailLength}}px) solid transparent;
-  left: calc(-1 *{{borderWeight}}px - 2* {{tailLength}}px);
+  left: calc(-0.5 *{{borderWeight}}px - 2* {{tailLength}}px);
   top: calc(20% + calc({{borderWeight}}px * 0.7));
 }
 
