@@ -14,6 +14,11 @@
     "label": "Secondary Text",
     "value": "THIS IS PROBABLY SOME REALLY LAME OVERDONE MEME HURHURHUR"
   },
+  "iconURL": {
+    "type": "textfield",
+    "label": "Icon URL",
+    "value": "https://data.whicdn.com/images/161353069/original.png"
+  },
   "headerFont": {
       "type": "googleFont",
       "label": "Header Font",
@@ -28,7 +33,7 @@
     "steps": 2
   },
   "headerFontColor": {
-    "type": "colorpicker",
+    "type": "color",
     "label": "Header Text Color",
     "value": "#FFFFFF"
   },
@@ -46,7 +51,7 @@
     "steps": 2
   },
   "mainFontColor": {
-    "type": "colorpicker",
+    "type": "color",
     "label": "Main Text Color",
     "value": "#666666"
   },
@@ -64,7 +69,7 @@
     "steps": 2
   },
   "subFontColor": {
-    "type": "colorpicker",
+    "type": "color",
     "label": "Sub Text Color",
     "value": "#666666"
   },
@@ -75,6 +80,24 @@
     "min": 1,
     "max": 10,
     "steps": 10
+  },
+  "bubbleColor": {
+    "type": "colorpicker",
+    "label": "Bubble Background Color",
+    "value": "#FFFFFF"
+  },
+  "borderColor": {
+    "type": "colorpicker",
+    "label": "Bubble Border Color",
+    "value": "#BBBBBB"
+  },  
+  "borderWeight": {
+    "type": "slider",
+    "label": "Border Thickness",
+    "value": 3,
+    "min": 0,
+    "max": 10,
+    "steps": 11
   },
   "bubbleVAlign": {
     "type": "slider",
