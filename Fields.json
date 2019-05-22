@@ -1,4 +1,28 @@
 {
+  "borderWeight": {
+    "type": "slider",
+    "label": "Border Thickness",
+    "value": 3,
+    "min": 0,
+    "max": 10,
+    "steps": 11
+  },
+  "tailLength": {
+    "type": "slider",
+    "label": "Tail Length",
+    "value": 0,
+    "min": 0,
+    "max": 20,
+    "steps": 11
+  },
+   "tailWidth": {
+    "type": "slider",
+    "label": "Tail Width",
+    "value": 0,
+    "min": 0,
+    "max": 10,
+    "steps": 11
+  },
   "Header": {
     "type": "textfield",
     "label": "Header Text",
@@ -91,14 +115,6 @@
     "label": "Bubble Border Color",
     "value": "#BBBBBB"
   },  
-  "borderWeight": {
-    "type": "slider",
-    "label": "Border Thickness",
-    "value": 3,
-    "min": 0,
-    "max": 10,
-    "steps": 11
-  },
   "bubbleVAlign": {
     "type": "slider",
     "label": "Bubble Vertical Offset",
